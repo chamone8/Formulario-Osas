@@ -1,0 +1,190 @@
+<html>
+<head>
+	<title></title>
+	<script src="assets/global/plugins/jquery-mask/jquery.mask.min.js"></script><script src="assets/global/plugins/jcrop/js/jquery.Jcrop.js"></script>
+	<link href="assets/global/plugins/jcrop/css/jquery.Jcrop.css" rel="stylesheet" type="text/css" />
+	<style type="text/css">.form-group>label {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+        
+        h4 {
+            cursor: pointer;
+        }
+        
+        .cabecalho {
+            font-size: medium;
+            font-weight: 500 !important;
+            background: #8cdad5 !important;
+            padding: 5px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            -webkit-box-shadow: 0px 1px 2px 0px rgba(194, 190, 194, 1);
+            -moz-box-shadow: 0px 1px 2px 0px rgba(194, 190, 194, 1);
+            box-shadow: 0px 1px 2px 0px rgba(194, 190, 194, 1);
+        }
+        
+        .container-de-cadastro {
+            padding: 25px 0px 25px 0px;
+            font-size: small;
+            -webkit-box-shadow: 0px 1px 2px 0px rgba(194, 190, 194, 1);
+            -moz-box-shadow: 0px 1px 2px 0px rgba(194, 190, 194, 1);
+            box-shadow: 0px 1px 2px 0px rgba(194, 190, 194, 1);
+        }
+        
+        .container-de-cadastro hr {
+            margin: 10px 0;
+        }
+        
+        .container-de-cadastro .form-group {
+            margin-bottom: 5px;
+        }
+        
+        .tabbable-line>.tab-content {
+            padding: 0 !important;
+        }
+
+        .mt-element-step {
+            margin-bottom: 25px;
+            transition: transform 1s ease-in-out;
+        }
+
+        .mt-element-step .step-line .mt-step-col {
+            padding: 0 !important;
+            transition: transform 1s ease-in-out;
+        }
+
+        .mt-element-step .step-line .mt-step-number>i {
+            top: 15px !important;
+            /* cursor: pointer; */
+        }
+
+        #body-pescador .portlet-body {
+            padding: 0 !important;
+        }
+
+        .mt-element-step .step-line .mt-step-title:before {
+            top: -13px !important;
+        }
+
+        .mt-element-step .step-line .mt-step-number {
+            padding: 3px;
+        }
+
+        .font-bold {
+            font-weight: bold;
+        }
+
+        .espaco-topo {
+            margin-top: 20px !important;
+        }
+
+        #campos {
+            background-color: white !important;
+        }
+	</style>
+</head>
+<body>
+<header>&nbsp;</header>
+
+<div class="container-fluid" id="container_corpo">
+<div class="row">
+<div class="col-md-12">
+<div class="portlet box yellow-gold " style=" border-radius: 10px 20px">
+<div class="portlet-title " style=" border-radius: 10px 20px">
+<div class="portlet-body form">
+<h1 style="margin-left: 13px"><strong>BMG</strong> <small style="">Nota Fiscal</small></h1>
+</div>
+</div>
+</div>
+
+<p>&nbsp;</p>
+
+<div align="left" class="col-md-4">
+<p>Origem:&nbsp;<span class="h-card" data-campo-altura="10" data-campo-classe="" data-campo-estilo="" data-campo-largura="200" style="display:block;"><span class="form-group form-md-line-input " style=" "><select class="form-control" data-campo-id="@@2@@" id="@@2@@" style="width:200px;"><option placeholder="2 - Origem">2 - Origem</option><option value="Valor02">Valor 02</option> </select></span></span></p>
+
+<p>Refer&ecirc;ncia:&nbsp;<span class="h-card" data-campo-altura="10" data-campo-classe="" data-campo-estilo="" data-campo-largura="200" style="display:block;"><span class="form-group form-md-line-input " style=" "><select class="form-control ref" data-campo-id="@@18@@" id="@@18@@" style="width:200px;"><option placeholder="18 - Referências">18 - Refer&ecirc;ncias</option><option value="Valor02">Valor 02</option> </select></span></span></p>
+
+<div class="comum">
+<p>N&ordm; - NF:&nbsp;<span class="h-card" data-campo-altura="10" data-campo-classe="" data-campo-estilo="" data-campo-largura="200" style="display:block;"><span class="form-group form-md-line-input " style=" "><input class="form-control" data-campo-id="@@3@@" id="@@3@@" placeholder=" " style="width:200px;" type="text" /></span></span></p>
+
+<p>Data Emiss&atilde;o NF:&nbsp;<span campo-estilo="" class="h-card" data-="" data-campo-altura="10" data-campo-classe="" data-campo-largura="200" style="display:block;"><span class="form-group form-md-line-input " style=" "><input class="form-control" data-campo-id="@@4@@" id="@@4@@" placeholder=" " style="width:200px;" type="text" /></span></span></p>
+
+<p>Data Vencimento NF:&nbsp;<span campo-estilo="" class="h-card" data-="" data-campo-altura="10" data-campo-classe="" data-campo-largura="200" style="display:block;"><span class="form-group form-md-line-input " style=" "><input class="form-control" data-campo-id="@@5@@" id="@@5@@" placeholder=" " style="width:200px;" type="text" /></span></span></p>
+
+<p>Emissor da NF:&nbsp;<span class="h-card" data-campo-="" data-campo-altura="10" data-campo-classe="" data-campo-largura="200" estilo="" style="display:block;"><span class="form-group form-md-line-input" style=" "><input class="form-control" data-campo-id="@@6@@" id="@@6@@" placeholder=" " style="width:200px;" type="text" /></span></span></p>
+
+<p>CNPJ do Emissor:&nbsp;<span campo-estilo="" class="h-card" data-="" data-campo-altura="10" data-campo-classe="" data-campo-largura="200" style="display:block;"><span class="form-group form-md-line-input " style=" "><input class="form-control" data-campo-id="@@7@@" id="@@7@@" placeholder=" " style="width:200px;" type="text" /></span></span></p>
+
+<p>Valor da NF:&nbsp;<span class="h-card" data-campo-="" data-campo-altura="10" data-campo-classe="" data-campo-largura="200" estilo="" style="display:block;"><span class="form-group form-md-line-input 	" style=" "><input class="form-control" data-campo-id="@@8@@" id="@@8@@" placeholder=" " style="width:200px;" type="text" /></span></span></p>
+</div>
+</div>
+
+<div align="left" class="col-md-6">
+<div class="assessoria">
+<p>Reten&ccedil;&atilde;o IR:<span campo-estilo="" class="h-card" data-="" data-campo-altura="10" data-campo-classe="" data-campo-largura="200" style="display:block;"><span class="form-group form-md-line-input " style=" "><input class="form-control" data-campo-id="@@9@@" id="@@9@@" placeholder=" " style="width:200px;" type="text" /></span></span></p>
+
+<p>ISS:&nbsp;<span class="h-card" data-campo-altura="10" data-campo-classe="" data-campo-estilo="" data-campo-largura="200" style="display:block;"><span class="form-group form-md-line-input " style=" 	"><input class="form-control" data-campo-id="@@13@@" id="@@13@@" placeholder=" " style="width:200px;" type="text" /></span></span></p>
+</div>
+
+<div class="honorario">
+<p>PIS:&nbsp;<span class="h-card" data-campo-altura="10" data-campo-classe="" data-campo-estilo="" data-campo-largura="200" style="display:block;"><span class="form-group form-md-line-input " style=" "><input class="form-control" data-campo-id="@@10@@" id="@@10@@" placeholder=" " style="width:200px;" type="text" /></span></span></p>
+
+<p>COFINS:&nbsp;<span class="h-card" data-campo-altura="10" data-campo-classe="" data-campo-estilo="" data-campo-largura="200" style="display:block;"><span class="form-group form-md-line-input " style=" "><input class="form-control" data-campo-id="@@11@@" id="@@11@@" placeholder=" " style="width:200px;" type="text" /></span></span></p>
+
+<p>CSLL:&nbsp;<span class="h-card" data-campo-altura="10" data-campo-classe="" data-campo-estilo="" data-campo-largura="200" style="display:block;"><span class="form-group form-md-line-input " style=" "><input class="form-control" data-campo-id="@@12@@" id="@@12@@" placeholder=" " style="width:200px;" type="text" /></span></span></p>
+</div>
+
+<div class="convenio">
+<p>Conv&ecirc;nio:&nbsp;<span class="h-card" data-campo-altura="10" data-campo-classe="" data-campo-estilo="" data-campo-largura="200" style="display:block;"><span class="form-group form-md-line-input " style=" "><input class="form-control" data-campo-id="@@14@@" id="@@14@@" placeholder=" " style="width:200px;" type="text" /></span></span></p>
+
+<p>Compet&ecirc;ncia:&nbsp;<span class="h-card" data-campo-altura="10" data-campo-classe="" data-campo-estilo="" data-campo-largura="200" style="display:block;"><span class="form-group form-md-line-input " style=" "><input class="form-control" data-campo-id="@@15@@" id="@@15@@" placeholder=" " style="width:200px;" type="text" /></span></span></p>
+
+<p>Linhas Cobradas para Emprestimo:&nbsp;<span class="h-card" data-campo-altura="10" data-campo-classe="" data-campo-estilo="" data-campo-largura="200" style="display:block;"><span class="form-group form-md-line-input " style=" "><input class="form-control" data-campo-id="@@16@@" id="@@16@@" placeholder=" " style="width:200px;" type="text" /></span></span></p>
+
+<div align="left" class="col-md-4">
+<p>Valor Unitario:&nbsp;<span class="h-card" data-campo-altura="10" data-campo-classe="" data-campo-estilo="" data-campo-largura="200" style="display:block;"><span class="form-group form-md-line-input " style=" "><input class="form-control" data-campo-id="@@17@@" id="@@17@@" placeholder=" " style="width:200px;" type="text" /></span></span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+      DocumentoVisualizacaoForm.camposCarregados(function () {
+          var $modal = $(document.body).find('.modal-content');
+          $modal.find("#CAMPO_18").click();
+
+        Ecm.registraEvento("change", "#CAMPO_2", function () {
+         //  $("#CAMPO_18 option:first").attr('selected','selected');
+			$("#CAMPO_18").trigger('change');
+           });
+        Ecm.registraEvento("change", "#CAMPO_18", function () {
+               //$(document.body).find($modal).on('change', $modal.find('#CAMPO_18'), conteudo);
+               $("#CAMPO_18").load();
+               conteudo();
+           });
+        function conteudo(){
+                    var item = $("#CAMPO_18").val();
+                    if(item == "HONORARIOS"){
+                      $modal.find(".comum").show();
+                      $modal.find(".assessoria").show();
+                      $modal.find(".honorario").show();
+                      $modal.find(".convenio").hide();
+                    }
+                    else if(item == "COMISSAO"){
+                      $modal.find(".comum").show();
+                      $modal.find(".assessoria").show();
+                      $modal.find(".honorario").hide();
+                      $modal.find(".convenio").hide();
+                    }
+                    else if(item == "PAGTO-CONVENIOS"){
+                      $modal.find(".comum").show();
+                      $modal.find(".convenio").show();
+                      $modal.find(".assessoria").hide();
+                      $modal.find(".honorario").hide();
+                    }
+           }
+		});
+</script></body>
+</html>
