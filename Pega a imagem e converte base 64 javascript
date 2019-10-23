@@ -1,0 +1,27 @@
+      var Base64Img;
+  function Base(){
+      if (window.File && window.FileReader && window.FileList && window.Blob) {
+  document.getElementById('files').addEventListener('change', handleFileSelect, false);
+} else {
+  alert('The File APIs are not fully supported in this browser.');
+}
+
+function handleFileSelect(evt) {
+  var f = evt.target.files[0];
+  var reader = new FileReader();
+  reader.onload = (function(theFile) {
+    return function(e) {
+      var binaryData = e.target.result;
+      var base64String = window.btoa(binaryData);
+    $('#CAMPO_24').val(base64String);
+      
+     Base64Img = base64String;
+    };
+  })(f);
+  reader.readAsBinaryString(f);
+}
+    
+    
+  }Base();
+
+     
