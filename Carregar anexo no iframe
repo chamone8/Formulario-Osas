@@ -1,0 +1,15 @@
+<script>
+     DocumentoVisualizacaoForm.camposCarregados(function () {
+            setTimeout(function () {
+                try {
+                    $('.listagemAnexos .arquivo:first').trigger('click');
+                    $(".formulario-upload").on("change", function () {
+                        setTimeout(function () {
+                            $('.listagemAnexos .arquivo:first').trigger('click');
+                        }, 1000);
+                    });
+                }
+                catch (err) { console.log("Catch Message: " + err.message); }
+            });
+        });
+  </script>
